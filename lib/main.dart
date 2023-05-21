@@ -18,6 +18,7 @@ void main() async {
 
 class MyApp extends StatefulWidget {
   // This widget is the root of your application.
+
   @override
   State<MyApp> createState() => _MyAppState();
 
@@ -52,6 +53,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       title: 'Proyecto Unidad2',
+      debugShowCheckedModeBanner: false,
       localizationsDelegates: [
         FFLocalizationsDelegate(),
         GlobalMaterialLocalizations.delegate,

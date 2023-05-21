@@ -425,7 +425,7 @@ class _FlutterFlowButtonTabBarState extends State<FlutterFlowButtonTabBar>
 
   void _updateTabController() {
     final TabController? newController =
-        widget.controller ?? DefaultTabController.maybeOf(context);
+        widget.controller ?? DefaultTabController.of(context);
     assert(() {
       if (newController == null) {
         throw FlutterError(
